@@ -651,7 +651,7 @@ function configure_penpot_setup() {
   local penpot_telemetry_value="true"
   [ "$PENPOT_TELEMETRY_INPUT" = "disable" ] && penpot_telemetry_value="false"
 
-  local penpot_flags_value="disable-secure-session-cookies disable-email-verification enable-login-with-password enable-prepl-server ${PENPOT_REGISTRATION_INPUT}-registration"
+  local penpot_flags_value="disable-secure-session-cookies disable-email-verification enable-login-with-password enable-prepl-server enable-mcp ${PENPOT_REGISTRATION_INPUT}-registration"
 
   local penpot_secret_key
   penpot_secret_key=$(openssl rand -base64 64 | tr -d '\n')
